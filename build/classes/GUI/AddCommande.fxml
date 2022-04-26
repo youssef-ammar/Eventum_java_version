@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="371.0" styleClass="btn" stylesheets="@tableview.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddCommandeController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="384.0">
+         <children>
+            <Text fill="#3700ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Commande Details">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="adressetf" />
+           
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="64.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="date" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="datetf" prefHeight="31.0" prefWidth="189.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="89.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="nombre produit" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nbrtf" />
+            
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="114.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Produit" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="prodtf" prefHeight="31.0" prefWidth="186.0" />
+          
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="62.0" prefWidth="384.0">
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+         <children>
+            <Button fx:id="savebtn" mnemonicParsing="false" onMouseClicked="#savetf" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #009DFF;" text="save" textFill="#fffefe" />
+            <HBox alignment="CENTER" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</VBox>
