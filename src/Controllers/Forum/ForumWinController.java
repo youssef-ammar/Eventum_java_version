@@ -10,8 +10,11 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import javax.imageio.ImageIO;
+import java.io.File;
 import java.sql.SQLException;
 
 
@@ -30,8 +33,17 @@ public class ForumWinController {
     @FXML
     private TextField forumtag;
 
-    double x, y;
 
+    double x, y;
+    @FXML
+    File addPic(ActionEvent event) throws SQLException {
+        FileChooser fileChooser = new FileChooser();
+        FileChooser.ExtensionFilter extensionFilterJpg = new FileChooser.ExtensionFilter("Jpg files(*.jpg)", "*.JPG");
+        FileChooser.ExtensionFilter extensionFilterPng = new FileChooser.ExtensionFilter("Png files(*.png)", "*.PNG");
+        fileChooser.getExtensionFilters().addAll(extensionFilterJpg, extensionFilterPng);
+        File file = fileChooser.showOpenDialog(null);
+        return file;
+    }
 
     @FXML
     void addForum(ActionEvent event) throws SQLException {

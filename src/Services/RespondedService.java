@@ -39,6 +39,11 @@ public class RespondedService implements IServices<Responded> {
     }
 
     @Override
+    public void addF(Responded responded) {
+
+    }
+
+    @Override
     public List<Responded> getList() {
         List<Responded> respondeds = new ArrayList();
 

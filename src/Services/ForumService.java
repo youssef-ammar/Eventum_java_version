@@ -42,6 +42,20 @@ public class ForumService implements IServices<Forum> {
     }
 
     @Override
+    public void addF(Forum p) {
+        try {
+            String querry = "INSERT INTO `forum`(`title`, `content`, `idOwner`,`categorieForum`,`image`) VALUES ('" + p.getTitle() + "','" + p.getContent() + "','" + p.getIdOwner() + "','" + p.getCategoryForum() + "','" + p.getImage() + "')";
+            Statement statement = connection.createStatement();
+
+            statement.executeUpdate(querry);
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+    }
+
+    @Override
     public List<Forum> getList() {
         List<Forum> forums = new ArrayList();
 

@@ -22,8 +22,8 @@ public class Main extends Application {
         String url;
 
 
-               url = "/Views/UI/Dashboard/DashboardMain.fxml";
-               // url = "/Views/UI/HomeTemplate.fxml";
+               //url = "/Views/UI/Dashboard/DashboardMain.fxml";
+                url = "/Views/UI/HomeTemplate.fxml";
         Parent root = FXMLLoader.load(getClass().getResource(url));
         primaryStage.setTitle("Eventum");
         try {

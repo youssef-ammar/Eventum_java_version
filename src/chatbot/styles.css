@@ -1,0 +1,71 @@
+.text-input {
+	-fx-background-color: rgba(0,0,0, 0.15);
+    -fx-text-fill: #A0A2BA;
+    -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-background-insets: 22 0 0 0, 0, 1, 2; 
+    -fx-background-radius: 0, 0;
+    transition: -fx-background-color .2s, -fx-background-insets .2s;
+}
+
+.text-input:focused {
+	-fx-background-color: rgba(234, 10, 10, 0.15);
+    -fx-background-insets: 23 0 0 0, 0, 1, 2; 
+}
+.button {
+    -fx-font-size: 14;
+	-fx-text-fill: #A0A2BA;
+    -fx-background-color: #151928;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 5);
+  
+}
+
+.button:hover {
+    -fx-background-color: #202432;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 2);
+}
+
+.button:armed {
+    -fx-effect: dropshadow(three-pass-box, black, 3, 0, 0, 1);
+}
+
+.close-button {
+    -fx-background-radius: 30;
+    -fx-text-fill: #FFF;
+	-fx-background-color: #F35051;
+    -fx-font-weight: bold;
+	-fx-effect: none;
+	transition: -fx-text-fill 0.2s;
+}
+
+.close-button:hover {
+    -fx-background-color: #202432;
+    -fx-effect: none;
+}
+
+.text-area {
+    -fx-text-fill: #f50505;
+    text-area-background: #fac30c;
+    -fx-background-radius: 0, 0;
+}
+
+.text-area .content {
+    -fx-text-fill: #A0A2BA;
+    -fx-background-color: text-area-background;
+    -fx-background-radius: 0, 0;
+}
+
+.check-box .box {
+    -fx-background-color: rgba(0,0,0, 0.2);
+    -fx-border-color:rgba(0,0,0, 0.2);
+    -fx-border-radius:3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:selected .box {
+    -fx-background-color: rgba(43, 50, 68, 0.4);
+}

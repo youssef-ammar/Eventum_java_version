@@ -13,6 +13,7 @@ public class Forum {
     private int idOwner;
     private int nbLikes;
     private State state;
+    private String image;
 
     public Forum(){
 
@@ -22,7 +23,15 @@ public class Forum {
         this.title = title;
         this.content = content;
     }
-
+    public Forum(int idForum, String title, String content, int idOwner, String categoryForum, State state,String image) {
+        this.idForum = idForum;
+        this.title = title;
+        this.content = content;
+        this.idOwner = idOwner;
+        this.categoryForum = categoryForum;
+        this.state=state;
+        this.image=image;
+    }
     public Forum(int idForum, String title, String content, int idOwner, String categoryForum, State state) {
         this.idForum = idForum;
         this.title = title;
@@ -105,6 +114,13 @@ public class Forum {
 
     public void setState(State state) {
         this.state = state;
+    }
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override
