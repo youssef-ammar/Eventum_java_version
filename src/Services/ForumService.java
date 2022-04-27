@@ -42,20 +42,6 @@ public class ForumService implements IServices<Forum> {
     }
 
     @Override
-    public void addF(Forum p) {
-        try {
-            String querry = "INSERT INTO `forum`(`title`, `content`, `idOwner`,`categorieForum`,`image`) VALUES ('" + p.getTitle() + "','" + p.getContent() + "','" + p.getIdOwner() + "','" + p.getCategoryForum() + "','" + p.getImage() + "')";
-            Statement statement = connection.createStatement();
-
-            statement.executeUpdate(querry);
-
-        } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
-        }
-
-    }
-
-    @Override
     public List<Forum> getList() {
         List<Forum> forums = new ArrayList();
 
@@ -92,6 +78,20 @@ public class ForumService implements IServices<Forum> {
     public boolean update(Forum p) {
         try {
             String querry = "UPDATE `forum` SET `title`='" + p.getTitle() + "',`content`='" + p.getContent() + "' WHERE `idForum`='" + p.getIdForum() + "'";
+            Statement statement = connection.createStatement();
+
+            statement.executeUpdate(querry);
+            return true;
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+            return false;
+        }
+    }
+    @Override
+    public boolean updateL(Forum p) {
+        try {
+            String querry = "UPDATE `forum` SET `nbrLikesForum`='" + ((p.getNbLikes())+1)  + "' WHERE `idForum`='" + p.getIdForum() + "'";
             Statement statement = connection.createStatement();
 
             statement.executeUpdate(querry);
