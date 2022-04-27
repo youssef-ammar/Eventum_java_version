@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/AjoutFXMLController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/item.fxml</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/AfficherCatController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/addCat.fxml</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Utils/MyDB.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/main/MyListener.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/AfficherFXMLController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/AfficheEventController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Entities/Events.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/ItemCatController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/AddCatController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/ShoweventController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/pidev3a37/NewFXMain.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/DashboardMain.fxml</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/AfficherFXML.fxml</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/print.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/ItemController.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Services/CategorieService.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Services/EventService.java</file>
+            <file>file:/D:/asma/esprit2/javafxx/projet/src/Gui/EditeEventController.java</file>
+        </group>
+    </open-files>
+</project-private>

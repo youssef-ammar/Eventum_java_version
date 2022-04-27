@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="Gui.AfficheEventController">
+   <children>
+      <HBox alignment="CENTER" layoutX="183.0" layoutY="22.0" prefHeight="66.0" prefWidth="390.0" stylesheets="@../values/style.css">
+         <children>
+            <TextField prefHeight="40.0" prefWidth="235.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../values/style.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="66.0" style="-fx-background-color: #F1BF15;" styleClass="search-button" stylesheets="@../values/style.css" text="Search" textFill="WHITE" />
+         </children>
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </HBox>
+      <ImageView fitHeight="105.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutY="99.0" prefHeight="298.0" prefWidth="602.0">
+         <children>
+            <ScrollPane fx:id="scroll" prefHeight="570.0" prefWidth="785.0" styleClass="transparent" stylesheets="@../values/style.css">
+               <content>
+                  <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+               <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
