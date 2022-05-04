@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="371.0" styleClass="btn" stylesheets="@tableview.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddUserController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="384.0">
+         <children>
+            <Text fill="#3700ff" strokeType="OUTSIDE" strokeWidth="0.0" text="User Details">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="nom" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nomtf" />
+           
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="64.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="prenom" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="prenomfid" />
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="89.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="login" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="logintf" />
+            
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="114.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="gender" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="gendertf" prefHeight="31.0" prefWidth="186.0" />
+          
+         </children>
+         <VBox.margin>
+            <Insets top="17.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="38.0" prefWidth="355.0">
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="103.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="email" wrappingWidth="102.13671875">
+                     <font>
+                        <Font name="Century Gothic" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" />
+            <TextField fx:id="emailfid" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="302.0" prefHeight="38.0" prefWidth="355.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="103.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="102.13671875">
+                     <font>
+                        <Font name="Century Gothic" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" />
+            <PasswordField fx:id="passwordfid" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="340.0" prefHeight="38.0" prefWidth="355.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="103.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday" wrappingWidth="102.13671875">
+                     <font>
+                        <Font name="Century Gothic" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" />
+            <DatePicker fx:id="birthdayfid" prefHeight="31.0" prefWidth="192.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="378.0" prefHeight="38.0" prefWidth="355.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="103.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="102.13671875">
+                     <font>
+                        <Font name="Century Gothic" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" />
+            <TextField fx:id="adressfid" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="416.0" prefHeight="38.0" prefWidth="355.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="103.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Role" wrappingWidth="102.13671875">
+                     <font>
+                        <Font name="Century Gothic" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" />
+            <ComboBox fx:id="rolefid" prefHeight="31.0" prefWidth="186.0" />
+         </children>
+      </HBox>
+      <Button fx:id="savebtn" mnemonicParsing="false" onMouseClicked="#savetf" prefHeight="31.0" prefWidth="241.0" text="SAVE" />
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainmoviespane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1200.0" stylesheets="styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ProfileController">
+   <children>
+      <AnchorPane layoutX="250.0" prefHeight="538.0" prefWidth="950.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <HBox layoutX="880.0" prefHeight="35.0">
+               <children>
+                  <JFXButton fx:id="minimisebtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#minimiseWindow" prefHeight="35.0" prefWidth="35.0" ripplerFill="WHITE" textFill="WHITE" />
+                  <JFXButton fx:id="closebtn" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleClose" prefHeight="35.0" prefWidth="35.0" ripplerFill="WHITE" />
+               </children>
+            </HBox>
+            <Pane fx:id="paneNoir" layoutX="97.0" prefHeight="570.0" prefWidth="796.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 0);">
+               <children>
+                  <Pane layoutX="141.0" layoutY="163.0" prefHeight="264.0" prefWidth="514.0" style="-fx-background-radius: 8; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 0);">
+                     <children>
+                        <VBox layoutX="33.0" layoutY="24.0" prefHeight="204.0" prefWidth="175.0">
+                           <children>
+                              <TextField fx:id="nom_i" prefHeight="34.0" prefWidth="162.0" promptText="Nom">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="e_nom" prefHeight="21.0" prefWidth="194.0" textFill="RED">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="email_i" prefHeight="34.0" prefWidth="162.0" promptText="Email">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="e_mail" prefHeight="21.0" prefWidth="203.0" textFill="RED">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="telephone_i" prefHeight="34.0" prefWidth="162.0" promptText="Telephone">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="e_telephone" prefHeight="21.0" prefWidth="182.0" textFill="RED">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="304.0" layoutY="24.0" prefHeight="183.0" prefWidth="178.0">
+                           <children>
+                              <TextField fx:id="prenom_i" prefHeight="41.0" prefWidth="178.0" promptText="Prenom">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="e_prenom" prefHeight="21.0" prefWidth="189.0" textFill="RED">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="39.0" prefWidth="217.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <TextField fx:id="addresse_i" prefHeight="41.0" prefWidth="178.0" promptText="Addresse" />
+                                 </children>
+                              </HBox>
+                              <Label fx:id="e_prenom11" prefHeight="26.0" prefWidth="250.0" textFill="RED">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="birthday" prefHeight="12.0" prefWidth="178.0" />
+                              <Label fx:id="e_prenom1" prefHeight="26.0" prefWidth="250.0" textFill="RED">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Label fx:id="Nomc" layoutX="317.0" layoutY="77.0" prefHeight="31.0" prefWidth="121.0" styleClass="labelc" stylesheets="@../css/profile.css" text="Slim Ayadi" />
+                  <Separator layoutX="308.0" layoutY="107.0" prefHeight="0.0" prefWidth="88.0" />
+                  <Label layoutX="113.0" layoutY="110.0" text="Veuillez saisir les nouvelles informations si vous souhaitez modifier votre profil." textAlignment="CENTER" />
+                  <JFXButton fx:id="modifier" buttonType="RAISED" layoutX="311.0" layoutY="411.0" onAction="#modifierUtilisateur" onMouseClicked="#send" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #73A800; -fx-background-radius: 20;" text="Send" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="webcamPane" layoutX="173.0" layoutY="86.0" prefHeight="490.0" prefWidth="733.0" style="-fx-background-color: ffffff;" visible="false" />
+         </children>
+      </AnchorPane>
+      <VBox fx:id="pnItems" alignment="TOP_CENTER" prefHeight="576.0" prefWidth="258.0" style="-fx-background-color: #FF5C00;">
+         <children>
+            <Label prefHeight="34.0" prefWidth="35.0" />
+            <Label fx:id="conn" text="user" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="34.0" prefWidth="35.0" />
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF5C00;" stylesheets="@../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Home" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../NetBeansProjects/MiddleFeast%20DESKTOP/src/images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnProduit" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF5C00;" stylesheets="@../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="User">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../NetBeansProjects/MiddleFeast%20DESKTOP/src/images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnprofile" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF5C00;" stylesheets="@../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Profile">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../NetBeansProjects/MiddleFeast%20DESKTOP/src/images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF5C00;" stylesheets="@../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Carte fidelite">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../NetBeansProjects/MiddleFeast%20DESKTOP/src/images/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnstats" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF5C00;" stylesheets="@../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Stats">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../NetBeansProjects/MiddleFeast%20DESKTOP/src/images/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logout" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="10.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF5C00;" stylesheets="@../../../../Desktop/MiddlefeastConnexionJDBC%20-%20Copie/src/middlefeast/esprit/gui/style.css" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../NetBeansProjects/MiddleFeast%20DESKTOP/src/images/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
