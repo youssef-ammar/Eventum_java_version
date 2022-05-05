@@ -15,7 +15,7 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import Tools.Smsapi;
+
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -93,7 +93,7 @@ public class AddCommandeController implements Initializable {
         prodtf.setValue(null);
 
     }
-
+//getquery : pour recperer les donnees mel Base de donnees
     private void getQuery(String adress, int nbr, int prod, int total, String date) {
 
         if (update == false) {

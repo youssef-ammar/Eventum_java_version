@@ -216,7 +216,7 @@ public class CommandeController implements Initializable {
         tel_col.setCellValueFactory(new PropertyValueFactory<>("tel"));
 
         adresse_col.setCellValueFactory(new PropertyValueFactory<>("adresse"));
-//String age =calculateAge(new PropertyValueFactory<>("birthday")) ;
+//String age =calculateAge(new PropertyValueFactory<>("birthday")) ;//total des produits
         nbproduit_col.setCellValueFactory(new PropertyValueFactory<>("nbprod"));
         date_col.setCellValueFactory(new PropertyValueFactory<>("date"));
         total_col.setCellValueFactory(new PropertyValueFactory<>("total"));

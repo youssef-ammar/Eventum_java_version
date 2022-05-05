@@ -157,12 +157,12 @@ public class AddProduitController implements Initializable {
         }
 
     }
-
+//
      @FXML
     private void uploadimage(MouseEvent event) throws MalformedURLException {
         FileChooser fc = new FileChooser();
         fc.setInitialDirectory(new File(System.getProperty("user.home") + "\\Desktop"));
-        fc.setTitle("Veuillez choisir l'image");
+        fc.setTitle("Veuillez choisir une image");
         fc.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("Image", "*.jpg", "*.png"),
                 new FileChooser.ExtensionFilter("PNG", "*.png"),
@@ -175,7 +175,7 @@ public class AddProduitController implements Initializable {
             path = selectedFile.getName();
 //                path = selectedFile.toURI().toURL().toExternalForm();
             imageproduit.setImage(new Image(selectedFile.toURI().toURL().toString()));
-            imageproduit.setFitHeight(150);
+            imageproduit.setFitHeight(250);
             imageproduit.setFitWidth(250);
             img.setText(path);
 
