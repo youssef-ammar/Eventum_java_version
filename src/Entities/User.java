@@ -51,7 +51,7 @@ public class User {
 
     public User() {
     }
-
+/**getters & setters */
     public int getId() {
         return id;
     }
